@@ -138,8 +138,8 @@ export default function Header({ pincode: externalPincode, onPincodeChange }: He
             <Image
               src="/images/taazabandi-logo-transparent.png"
               alt="TaazaBandi"
-              width={160}
-              height={52}
+              width={60}
+              height={60}
               className={styles.logoImg}
               priority
             />

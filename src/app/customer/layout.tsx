@@ -6,7 +6,7 @@ export default function CustomerLayout({ children }: { children: React.ReactNode
   return (
     <>
       <Header />
-      <main style={{ minHeight: 'calc(100vh - 150px)' }}>
+      <main className="customer-main" style={{ minHeight: 'calc(100vh - 150px)' }}>
         {children}
       </main>
       <Footer />

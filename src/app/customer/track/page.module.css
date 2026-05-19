@@ -1,9 +1,14 @@
 .trackPage {
   position: relative;
-  height: calc(100vh - 72px); /* Account for Header height */
-  margin-top: 72px; /* Push below fixed Header */
+  height: calc(100vh - 72px);
   width: 100%;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .trackPage {
+    height: calc(100vh - 64px);
+  }
 }
 
 .map {

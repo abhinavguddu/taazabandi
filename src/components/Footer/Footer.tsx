@@ -26,8 +26,8 @@ export default function Footer() {
             <Image 
               src="/images/taazabandi-logo-transparent.png" 
               alt="TaazaBandi" 
-              width={140} 
-              height={50} 
+              width={80} 
+              height={80} 
               style={{ objectFit: 'contain' }} 
             />
             <p>Skip the mandi. Farm-fresh vegetable bundles delivered by zone-based vans in Hyderabad. No cherry-picking, just quality.</p>

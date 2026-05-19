@@ -1,7 +1,7 @@
 .orderPage {
   min-height: 100vh;
   background: linear-gradient(to bottom, #F5F5F5, #FFF);
-  padding: 120px 1rem 2rem;
+  padding: 2rem 1rem;
 }
 
 .orderContainer {

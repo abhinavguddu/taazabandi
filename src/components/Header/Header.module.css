@@ -43,21 +43,23 @@
 }
 
 .logoImg {
-  height: 52px;
-  width: auto;
+  height: 60px;
+  width: 60px;
   object-fit: contain;
   transition: transform var(--duration-normal) var(--ease-spring);
 }
 
 @media (max-width: 768px) {
   .logoImg {
-    height: 42px;
+    height: 48px;
+    width: 48px;
   }
 }
 
 @media (max-width: 480px) {
   .logoImg {
-    height: 38px;
+    height: 44px;
+    width: 44px;
   }
 }
 
@@ -217,6 +219,12 @@
 @media (max-width: 1024px) {
   .navLink {
     padding: var(--space-2);
+  }
+}
+
+@media (max-width: 768px) {
+  .navLink {
+    display: none !important;
   }
 }
 

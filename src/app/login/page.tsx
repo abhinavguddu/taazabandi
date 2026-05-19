@@ -149,8 +149,8 @@ export default function LoginPage() {
           <Image
             src="/images/taazabandi-logo-transparent.png"
             alt="TaazaBandi"
-            width={200}
-            height={72}
+            width={120}
+            height={120}
             className={styles.loginLogoImg}
             priority
           />
