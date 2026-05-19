@@ -1,0 +1,178 @@
+.pendingPage {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #F5F5F5, #FFF);
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.statusCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.iconPending {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  animation: pulse 2s infinite;
+}
+
+.iconRejected {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1A1A1A;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 1.125rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.timeline {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.timelineItem:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  width: 2px;
+  height: calc(100% - 20px);
+  background: #E0E0E0;
+}
+
+.timelineItem.done::after {
+  background: #4CAF50;
+}
+
+.timelineItem.active::after {
+  background: linear-gradient(to bottom, #4CAF50, #E0E0E0);
+}
+
+.timelineIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.timelineItem.done .timelineIcon {
+  background: #E8F5E9;
+}
+
+.timelineItem.active .timelineIcon {
+  background: #FFF3E0;
+  animation: pulse 2s infinite;
+}
+
+.timelineContent {
+  flex: 1;
+}
+
+.timelineTitle {
+  font-weight: 700;
+  color: #1A1A1A;
+  margin-bottom: 0.25rem;
+}
+
+.timelineDesc {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.infoBox {
+  background: #F9F9F9;
+  border-left: 4px solid #2E7D32;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.infoBox strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #1A1A1A;
+}
+
+.infoBox ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.infoBox li {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.retryBtn {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #2E7D32, #1B5E20);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.retryBtn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .statusCard {
+    padding: 2rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .message {
+    font-size: 1rem;
+  }
+}
