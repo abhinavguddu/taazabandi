@@ -147,11 +147,12 @@ export default function LoginPage() {
       <div className={styles.loginCard}>
         <div className={styles.loginLogo}>
           <Image
-            src="/images/taazabandi-logo-transparent.png"
+            src="/images/taazabandi-logo-original.png"
             alt="TaazaBandi"
             width={120}
             height={120}
             className={styles.loginLogoImg}
+            unoptimized
             priority
           />
         </div>

@@ -24,10 +24,11 @@ export default function Footer() {
         <div className={styles.footerGrid}>
           <div className={styles.footerBrand}>
             <Image 
-              src="/images/taazabandi-logo-transparent.png" 
+              src="/images/taazabandi-logo-original.png" 
               alt="TaazaBandi" 
-              width={80} 
-              height={80} 
+              width={100} 
+              height={100} 
+              unoptimized
               style={{ objectFit: 'contain' }} 
             />
             <p>Skip the mandi. Farm-fresh vegetable bundles delivered by zone-based vans in Hyderabad. No cherry-picking, just quality.</p>

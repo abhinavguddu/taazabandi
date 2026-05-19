@@ -133,37 +133,41 @@ export default function Header({ pincode: externalPincode, onPincodeChange }: He
     <>
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
         <div className={styles.headerInner}>
-          {/* Logo */}
-          <Link href="/" className={styles.logo}>
-            <Image
-              src="/images/taazabandi-logo-transparent.png"
-              alt="TaazaBandi"
-              width={60}
-              height={60}
-              className={styles.logoImg}
-              priority
-            />
-          </Link>
+          {/* Left Group (Logo & Location) */}
+          <div className={styles.leftGroup}>
+            {/* Logo */}
+            <Link href="/" className={styles.logo}>
+              <Image
+                src="/images/taazabandi-logo-transparent.png"
+                alt="TaazaBandi"
+                width={80}
+                height={80}
+                className={styles.logoImg}
+                unoptimized
+                priority
+              />
+            </Link>
 
-          {/* Location Selector */}
-          <button
-            className={styles.locationBtn}
-            onClick={() => setShowPincodeModal(true)}
-          >
-            <div className={styles.locationIcon}>📍</div>
-            <div className={styles.locationText}>
-              <span className={styles.locationLabel}>
-                <span className={styles.boltEmoji}>⚡</span>
-                Delivering to
-              </span>
-              <span className={styles.locationValue}>
-                {getPincodeDisplayName()}
-                <svg className={styles.chevron} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <polyline points="6 9 12 15 18 9"/>
-                </svg>
-              </span>
-            </div>
-          </button>
+            {/* Location Selector */}
+            <button
+              className={styles.locationBtn}
+              onClick={() => setShowPincodeModal(true)}
+            >
+              <div className={styles.locationIcon}>📍</div>
+              <div className={styles.locationText}>
+                <span className={styles.locationLabel}>
+                  <span className={styles.boltEmoji}>⚡</span>
+                  Delivering to
+                </span>
+                <span className={styles.locationValue}>
+                  {getPincodeDisplayName()}
+                  <svg className={styles.chevron} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </span>
+              </div>
+            </button>
+          </div>
 
           {/* Search */}
           <div className={styles.searchBar}>
